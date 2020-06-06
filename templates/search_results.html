@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% block content %}
+    <html xmlns="http://www.w3.org/1999/html">
+    <head>
+        <title>
+            search
+        </title>
+    </head>
+    <body>
+    {% if post_list %}
+    {% for post in post_list %}
+        <table class="table">
+        <tr>
+        <th>author name</th>
+        <th>title</th>
+        <th>text</th>
+        </tr>
+        <tr>
+        <td>
+            {{ post.author }}
+        </td>
+        <td>{{ post.title }}</td>
+        <td>{{ post.text }}</td>
+        </tr>
+
+    {% endfor %}
+        {% else %}
+        <p style="color: red"><strong>SORRY  IN VALIED KEY WORDS</strong></p>
+    {% endif %}
+    </table>
+    </body>
+    </html>
+{% endblock %}
