@@ -25,7 +25,7 @@ SECRET_KEY = 's13jm0=&u!=yq)!$r!&e%lt$8ncy&0()$^!uzbt14q!)6ha+i0'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["my-village.development.heroku.com"]
+ALLOWED_HOSTS = [""]
 
 
 # Application definition
